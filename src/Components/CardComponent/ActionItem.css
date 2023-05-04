@@ -1,0 +1,25 @@
+.action-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .status {
+    margin-right: 10px;
+  }
+  
+  .description {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .priority {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    margin-left: 10px;
+  }
