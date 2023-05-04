@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import ActionItem from './ActionItem';
-import './ActionItem.css';
+import ActionItem from '../CardItems/ActionItem';
+// import './ActionItem.css';
 
-const OverallCard = () => {
+const ActionCard = () => {
   const [actionItems, setActionItems] = useState([
     { id: 1, status: 'In progress', description: 'Finish React project', priority: true },
     { id: 2, status: 'Not started', description: 'Buy groceries', priority: false },
@@ -28,4 +28,4 @@ const OverallCard = () => {
   );
 };
 
-export default OverallCard;
+export default ActionCard;

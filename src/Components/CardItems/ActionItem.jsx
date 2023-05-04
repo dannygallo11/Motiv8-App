@@ -1,4 +1,5 @@
 import React from 'react';
+import "./ActionItem.css";
 
 
 const ActionItem = ({ status, description, priority, onDelete }) => {
@@ -14,14 +15,14 @@ const ActionItem = ({ status, description, priority, onDelete }) => {
   return (
     <div className="card">
       <div className="card-body">
-        <div className="row align-items-center">
-          <div className="col-md-2">
+        <div className="action-item">
+          <div className="status">
             <p>{status}</p>
           </div>
-          <div className="col-md-6">
+          <div className="description">
             <p>{description}</p>
           </div>
-          <div className="col-md-2">
+          <div className="priority">
             <label htmlFor={`priority-${description}`}>Priority:</label>
             <input
               id={`priority-${description}`}
@@ -30,7 +31,7 @@ const ActionItem = ({ status, description, priority, onDelete }) => {
               onChange={handlePriorityChange}
             />
           </div>
-          <div className="col-md-2">
+          <div className="delete-button">
             <button className="btn btn-danger" onClick={handleDelete}>
               Delete
             </button>

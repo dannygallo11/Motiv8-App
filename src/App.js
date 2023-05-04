@@ -1,9 +1,9 @@
 import React from "react";
-import OverallCard from "./Components/CardComponent/ActionCard";
+import ActionCard from "./Components/Cards/ActionCard";
 
 function App() {
   return (
-    <div><OverallCard /></div>
+    <div><ActionCard /></div>
   );
 }
 
